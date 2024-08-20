@@ -4,11 +4,13 @@ leiviska = float(input("Anna leiviskät: "))
 naula = float(input("Anna naulat: "))
 luoti = float(input("Anna luodit: "))
 
-leiviskagramma = leiviska * 20 * 32 * 13.3
-naulat = naula * 32 * 13.3
-luoti = luoti * 13.3
+grammat = luoti * 13.3 + naula * 32 * 13.3 + leiviska * 20 * 32 * 13.3
+kilot = grammat / 1000
 
-print(leiviskagramma + naulat + leiviska)
-#leiviska 25 536 g
-#naula  3 830,4 g
-#luoti 179,55
+grammat1 = math.trunc(kilot) * 1000
+grammat2 = grammat - grammat1
+
+grammatvastaus = str(grammat2)
+grammatvastaus.split(".")
+print(str(math.trunc(kilot)) + " kilogrammaa ja " + grammatvastaus[0:6] + " grammaa.")
+print(grammat)
