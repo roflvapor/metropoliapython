@@ -29,8 +29,6 @@ yhteys = mysql.connector.connect(
     collation="utf8mb4_unicode_ci"
 )
 
-country = "EFVU"
-country2 = "EFFO"
-# country = input("Anna ICAO koodi 1: ")
-# country2 = input("Anna ICAO koodi 2: ")
+country = input("Anna ICAO koodi 1: ")
+country2 = input("Anna ICAO koodi 2: ")
 hae_lentokentat(country, country2)
