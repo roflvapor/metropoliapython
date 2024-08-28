@@ -15,7 +15,10 @@ piz1 = pizza(piz1cm, piz1eur)
 piz2 = pizza(piz2cm, piz2eur)
 
 minhintaper = min(piz1, piz2)
-if minhintaper == piz1:
+if minhintaper == piz1 and minhintaper == piz2:
+    print("Molemmat pizzat ovat sama hintoisija,", minhintaper, "euroa per neliometri")
+
+elif minhintaper == piz1:
     print("Pizza 1 on paras hinta, ", minhintaper, "euroa per neliometri")
-if minhintaper == piz2:
+elif minhintaper == piz2:
     print("Pizza 2 on paras hinta", minhintaper, "euroa per neliometri")
