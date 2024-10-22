@@ -15,5 +15,6 @@ while syote != 3:
         for icao in lentoasemat:
             if icao == airfield_icao:
                 print(f"Lentoaseman nimi on {lentoasemat[icao]}")
-
+        if airfield_icao not in lentoasemat:
+            print("lentokenttää ei oo")
     syote = int(input("\nHaluatko 1: tallenna uusi lentoasema, 2: hakea lentoasema, 3: lopettaa "))
